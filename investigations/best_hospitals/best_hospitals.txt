@@ -1,0 +1,50 @@
+To determine which hospitals provided the highest quality of care, I evaluated
+both the average quality rating across the various procedures and how consistently
+each hospital achieved their average level of quality. To do this, I synthesized
+and overall Quality Score for each hospital. The Quality Score for each hospital
+is a combination of the following:
+
+1.  Average Procedure Rating
+    As part of data transformation, the Score presented in the raw procedure data
+    was standardized to present the percentage of cases that received the correct
+    treatment for the associated condition (per the description in the data dictionary).
+    The Timely and Effective Care - Hospital and Readmission and Death - Hospital
+    datasets were combined to evaluate a broad spectrum of procedures and conditions.
+    Procedures where a positive outcome was indicated by a low Score were transformed
+    to be consistent, including several fro the Timely and Effective Care dataset,
+    as well as all procedures from the Readmission and Death dataset.
+    The dataset included some procedures that were not consistent with the percentage
+    scoring metric, measuring median times or emergency department volumes. These
+    measures were excluded from analysis to maintain a consistent set of metrics.
+    After transformation, procedure scores were averaged for each hospital.
+
+2.  Procedure Score Variability
+    Variability was measured by calculating the standard deviation of the collection
+    of procedure scores for each hospital. Hospitals with a lower standard deviation
+    have more consistent procedure scores, and hospitals with a higher standard
+    deviation have less consistent scores.
+    Procedures for which no scores were available were evaluated as a score of zero.
+    This was done to account for hospitals with very high scores for a small number
+    of procedures but no scores recorded in most. For example, a hospital that scored
+    100% for two procedures, but had no scores for 20 others could potentially have
+    a very high quality score (high average and low variability), even though there
+    is actually very little data on which to judge its performance.
+
+The Quality Score for each hospital was calculated as:
+Quality Score = Average Procedure Score / (Standard Deviation of Scores / Average of All Hospital Standard Deviations)
+
+The table below lists the hospitals with the top ten Quality Scores. These hospitals
+displayed consistently high scores across a variety of metrics, making them models
+of high quality care.
+
+Provider_ID Hospital_Name                           State   Procedure Average   Std Dev             Quality Score
+340115  	FIRSTHEALTH MOORE REGIONAL HOSPITAL 	NC    	89.99074074074075	22.665647595707135	134.6726936682889
+490063  	INOVA FAIRFAX HOSPITAL              	VA    	88.73518518518516	22.463576752629177	133.98827763174043
+340113  	CAROLINAS MEDICAL CENTER/BEHAV HEALTH	NC   	89.52222222222223	22.682377452850492	133.87273414586204
+010039  	HUNTSVILLE HOSPITAL                  	AL   	88.96666666666668	22.55717837621311	133.78037145139035
+450388  	METHODIST HOSPITAL	                    TX  	90.02407407407408	22.829553094903794	133.75533256497647
+100087  	SARASOTA MEMORIAL HOSPITAL	            FL  	89.30392156862747	23.01013383557565	131.64405092856984
+050308  	EL CAMINO HOSPITAL	                    CA  	89.50588235294119	23.080196177545854	131.54124091784365
+450184  	MEMORIAL HERMANN HOSPITAL SYSTEM	    TX    	88.37254901960783	22.819496982232252	131.35940340067856
+260065  	MERCY HOSPITAL SPRINGFIELD	            MO  	88.94901960784313	22.97499384496297	131.32143331342135
+030036  	CHANDLER REGIONAL MEDICAL CENTER	    AZ  	89.23725490196077	23.05450456417858	131.29260357603334
