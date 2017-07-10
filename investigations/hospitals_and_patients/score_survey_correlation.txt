@@ -1,0 +1,27 @@
+Patient survey results are contained in the HCAHPS data tables. HCAHPS uses detailed
+responses from patients on a variety of criteria to assign star ratings to hospitals.
+Each hospital is assigned a star rating for each survey category (hospital cleanliness,
+noise level, staff responsiveness, etc.) and for the hospital overall. To evaluate
+whether patient responses are correlated with hospital procedure scores and variability,
+it was necessary to combine transform procedure data with the summary star ratings
+from the HCAHPS tables.
+Using the data prepared for the hospital quality analysis, average procedure scores
+and variability (standard deviation) were calculated for each hospital and joined
+to the summary star ratings from the HCAHPS dataset. Because of the interest in
+evaluating the potential for correlation between star ratings and both average scores
+and variability, the overall hospital Quality Score computed for the hospital
+analysis was not used.
+Surprisingly, based on the output in the table below, there appears to be a slight
+negative correlation between average procedure score and patient summary star rating.
+Conversely, greater score variability appears positively correlated with patient
+star ratings. However, both of these relationships are relatively weak and be caused
+by number of unobserved variables. The questions asked by the HCAHPS survey cover
+topics related to patient experience, which is relatively subjective; these experiential
+topics are generally not covered by the procedure dataset, which is more focused
+on appropriate treatment.
+These factors lead me to conclude that no meaningful correlation exists between
+patient survey responses and either average procedure scores or variability.
+
+Pearson's Correlation Coefficients with Summary Star Ratings
+Procedure Average Score     Procedure Std Dev
+-0.3798073933019625         0.2474329153167158
