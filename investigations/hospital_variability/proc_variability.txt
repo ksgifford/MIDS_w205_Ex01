@@ -1,0 +1,28 @@
+To evaluate variability of procedures between hospitals, the average score for each
+procedure across all hospitals and the standard deviation of the distribution of
+scores were calculated. Unlike the calculations for hospital quality, records with
+missing score data were excluded; as described in the hospital analysis methodology,
+these records were only included to prevent distortion of summary scores for individual
+hospitals. At the national level, there are enough records for each procedure that
+excluding those with missing data will not skew the results - most procedures have
+several thousand data points, and even the most poorly documented procedures have
+over 100 records.
+
+The table below presents the ten procedures with the highest standard deviation
+among their reported scores. A higher standard deviation indicates greater variability
+among scores, while a lower standard deviation indicates more consistent scores.
+As shown below, Thrombolytic Therapy and Fibrinolytic Therapy top the list of most
+variable procedures.
+
+
+Measure ID          Measure Name                                                        Procedure Average   Std Dev
+STK_4               Thrombolytic Therapy                                                82.90045766590389	21.954194561164023
+AMI_7a              Fibrinolytic Therapy Received Within 30 Minutes Of Hospital Arrival	50.0                18.7794213613377
+OP_2                Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival       70.25               18.048443797995763
+IMM_3_FAC_ADHPCT    Healthcare workers given influenza vaccination                      80.68061252392671   16.348047889323595
+VTE_5               Warfarin therapy discharge instructions                             88.8820907617504	16.30300466996529
+VTE_1               Venous thromboembolism prophylaxis                                  89.11431805319751	15.257401142298388
+STK_8               Stroke Education                                                    90.53962900505903	14.013262732452308
+CAC_3               Home Management Plan of Care Document                               89.375              12.71912110433212
+IMM_2               Immunization for influenza                                          91.74645627173041	11.944885922069522
+HF_1                Discharge instructions                                              93.61008861622359	11.827981182220096
