@@ -1,0 +1,24 @@
+To determine with states were models of high quality care, I used a similar
+methodology to the assessment of individual hospitals, except the procedure scores
+were averaged at the state level, rather than for each hospital. Likewise, standard
+deviation was calculated for all procedures that occurred in a state. The combined
+Quality Score was calculated at the state level according to the same formula
+presented in the methodology description for the analysis of hospitals.
+
+At the state level, procedure scores had a greater amount of variation than at
+the hospital level, likely due differences in quality between hospitals in the
+same state, as well as the sheer number of procedures. The table below presents
+the top ten states, their average procedure scores, standard deviations, and
+overall quality scores.
+
+State   Procedure Average   Std Dev              Quality Score
+NJ  	79.75325787702667	33.59061061344062    101.40409057809877
+DE  	79.60607902735565	33.95427498553235    100.132881088733
+CT  	73.66184295911744	38.61698405795872    81.46839638275488
+FL  	73.56386829481009	38.92136246263444    80.72377512646092
+RI  	72.86163194444443	38.66298927524706    80.48749397509405
+MA  	69.36803278688525	41.308402191205005   71.72093158523987
+VA  	69.03515774378593	41.78140224078741    70.56872167602909
+DC  	67.35439814814818	40.96553462305344    70.22185101664775
+NY  	66.51887072808324	42.01724253291788    67.61487670953363
+PA  	66.71742379314419	42.52676322196372    67.00417733758269
